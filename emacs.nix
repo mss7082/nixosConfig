@@ -21,9 +21,13 @@ in
   emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [ 
     magit          # ; Integrate git <C-x g>
     zerodark-theme # ; Nicolas' theme
+    lsp-mode
+    lsp-ui
   ]) ++ (with epkgs.melpaPackages; [ 
    # undo-tree      # ; <C-x u> to show the undo tree
    # zoom-frm       # ; increase/decrease font size for all buffers %lt;C-x C-+>
+   lsp-haskell
+   evil
   ]) ++ (with epkgs.elpaPackages; [ 
     auctex         # ; LaTeX mode
     beacon         # ; highlight my cursor when scrolling
